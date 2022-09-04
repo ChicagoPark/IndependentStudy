@@ -60,14 +60,20 @@ fixed_y_tran_recon[fixed_x == 0] = 0
 +           Following that the DeCoLearn can work decently on MRI dataset with 12 sensitivity maps.
 ```
 
-#### `1.2.3. [Experiment Result - Try Gradient Clipping]`
+#### `1.2.3. [Experiment Result - Deep Unrolling Training with DU iteration k = 7 / With Gradient Clipping (clip_value=1)]`
+
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336895-83ba5b00-97db-47e6-8274-4b0b95b08f23.PNG">
+
+
 
 ```diff
 + Analysis 1: 
 
 ```
 
-#### `1.2.4. [Experiment Result - ]`
+#### `1.2.4. [Experiment Result - Deep Unrolling Training with DU iteration k = 7 / With Gradient Clipping (clip_value=0.5)]`
+
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336896-7e78305f-92b8-4406-bb42-93997547cc50.PNG">
 
 ```diff
 + Analysis 1: 
