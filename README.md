@@ -73,7 +73,7 @@ TensorBoard  	      |      MRI Image
 <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336895-83ba5b00-97db-47e6-8274-4b0b95b08f23.PNG">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188514038-cad7d09e-0978-441a-8e46-703103c72e26.png">
 
 ```diff
-+ Analysis 1: 
++ Analysis: Since I increase the number of parameters by setting iteration variable as 7, it shows the overfitting tendency when clip_value is 1.
 
 ```
 
@@ -85,7 +85,7 @@ TensorBoard  	      |      MRI Image
 
 
 ```diff
-+ Analysis 1: 
++ Analysis: By reducing the clip_value at the same model with 1.2.3, it presents stable training tendency.
 
 ```
 
