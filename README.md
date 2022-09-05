@@ -1,7 +1,6 @@
 # IndependentStudy (CSE 400E)
-```
-WashU Research Course
 
+```
 Independent Study Advisor: Professor Ulugbek Kamilov
 
 Ph.D. Candidate Advisor: Weijie Gan
@@ -41,7 +40,9 @@ fixed_y_tran_recon[fixed_x == 0] = 0
 
 #### `1.2.1. [Experiment Result - DeCoLearn Only Training 1 - With Gradient Clipping (clip_value=1)]`
 
-<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336324-fcf66f6b-7b51-403f-a248-dcf0bf09c79b.PNG">   
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336324-fcf66f6b-7b51-403f-a248-dcf0bf09c79b.PNG">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188514259-a5665cf4-7a74-455a-8f4b-7e7805b5ed25.png">
 
 
 ```diff
@@ -52,7 +53,10 @@ fixed_y_tran_recon[fixed_x == 0] = 0
 
 #### `1.2.2. [Experiment Result - DeCoLearn Only Training 2  - With Gradient Clipping (clip_value=0.5)]`
 
-<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336333-66e94836-fb03-457a-9599-5c99cce0d143.PNG">
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336333-66e94836-fb03-457a-9599-5c99cce0d143.PNG">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188514262-20c75b58-4ce2-45ff-90b3-0429d9d8eee3.png">
+
 
 ```diff
 + Analysis: I applied Gradient Clipping at the reconstruction module's parameters and registration module's parameters at the same time.
@@ -62,9 +66,9 @@ fixed_y_tran_recon[fixed_x == 0] = 0
 
 #### `1.2.3. [Experiment Result - Deep Unrolling Training with DU iteration k = 7 / With Gradient Clipping (clip_value=1)]`
 
-<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336895-83ba5b00-97db-47e6-8274-4b0b95b08f23.PNG">
-
-
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336895-83ba5b00-97db-47e6-8274-4b0b95b08f23.PNG">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188514038-cad7d09e-0978-441a-8e46-703103c72e26.png">
 
 ```diff
 + Analysis 1: 
@@ -73,7 +77,10 @@ fixed_y_tran_recon[fixed_x == 0] = 0
 
 #### `1.2.4. [Experiment Result - Deep Unrolling Training with DU iteration k = 7 / With Gradient Clipping (clip_value=0.5)]`
 
-<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336896-7e78305f-92b8-4406-bb42-93997547cc50.PNG">
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188336896-7e78305f-92b8-4406-bb42-93997547cc50.PNG">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188513958-73b04cba-c48d-4daa-9ad9-d4d93f8bfaa9.png">
+
 
 ```diff
 + Analysis 1: 
@@ -82,7 +89,10 @@ fixed_y_tran_recon[fixed_x == 0] = 0
 
 #### `1.2.5. [Experiment Result - Deep Unrolling Training with DU iteration k = 10 / With Gradient Clipping (clip_value=0.3)]`
 
-<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188513334-da57b11d-962a-4058-99b3-0a8737339d3a.jpeg">
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188513334-da57b11d-962a-4058-99b3-0a8737339d3a.jpeg">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188513909-44087e20-eacf-4354-8ddb-b1a3a29ca0fc.png">
+
 
 ```diff
 + Analysis 1: 
