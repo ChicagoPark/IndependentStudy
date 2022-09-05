@@ -80,6 +80,14 @@ fixed_y_tran_recon[fixed_x == 0] = 0
 
 ```
 
+#### `1.2.5. [Experiment Result - Deep Unrolling Training with DU iteration k = 10 / With Gradient Clipping (clip_value=0.3)]`
+
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188513334-da57b11d-962a-4058-99b3-0a8737339d3a.jpeg">
+
+```diff
++ Analysis 1: 
+
+```
 
 ----
 
