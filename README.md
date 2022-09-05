@@ -4,6 +4,8 @@
 Independent Study Advisor: Professor Ulugbek Kamilov
 
 Ph.D. Candidate Advisor: Weijie Gan
+
+Computational Imaging Group Website: https://cigroup.wustl.edu/
 ```
 
 
