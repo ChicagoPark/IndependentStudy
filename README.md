@@ -13,7 +13,7 @@ Computational Imaging Group Website: https://cigroup.wustl.edu/
 
 > Meeting Purpose: To solve unstable and unusual training and validation performance.
 
-`Unstable Training Tendency using Deep Unfolding Network`
+`Unstable Training Tendency by Deep Unfolding Network`
 :---------------: 
  <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188335358-5290760d-1651-4deb-89e8-fc89b3e250ae.PNG">   
 
