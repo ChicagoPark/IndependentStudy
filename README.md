@@ -63,7 +63,7 @@ TensorBoard  	      |      MRI Image
 ```diff
 + Analysis: I applied Gradient Clipping at the reconstruction module's parameters and registration module's parameters at the same time.
 
-+           Following that the DeCoLearn can work decently on MRI dataset with 12 sensitivity maps.
++           Following that the DeCoLearn can work decently on the MRI dataset with 12 sensitivity maps.
 ```
 
 #### `1.2.3. [Experiment Result - Deep Unrolling Training with DU iteration k = 7 / With Gradient Clipping (clip_value=1)]`
@@ -96,13 +96,15 @@ TensorBoard  	      |      MRI Image
 <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188513334-da57b11d-962a-4058-99b3-0a8737339d3a.jpeg">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188513909-44087e20-eacf-4354-8ddb-b1a3a29ca0fc.png">
 
 
-```diff
-+ Analysis 1: 
-
-```
-
 ----
 
+#### `Conclusion`
+
+When I add a sensitivity map to the DeCoLearn, I had never expected unstable training performance because of the more plentiful data.
+
+However, I can analyze that the additional sensitivity map suggested a more challenging environment for the Registration Module.
+
+This research note will help future training issues.
 
 
 
