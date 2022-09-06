@@ -95,10 +95,22 @@ TensorBoard  	      |      MRI Image
 :---------------: | :-------------:
 <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188513334-da57b11d-962a-4058-99b3-0a8737339d3a.jpeg">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188513909-44087e20-eacf-4354-8ddb-b1a3a29ca0fc.png">
 
+#### `1.2.6. [Experiment Result - Deep Unrolling Training with DU iteration k = 3 / With Gradient Clipping (clip_value=0.3)] batch = 4 / n_resblock = 5`
+
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188631517-f87f4931-b928-4297-b08f-4aa5ba2e93e2.PNG">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/188631528-3f66f55a-1ac2-4c49-8706-8678d902aa81.png">
+
+```diff
++ Analysis: Since the DU iteration parameter k is small with 3 and resblock is shallow with 5 blocks - because of the batch size of 4, we have unstable training result.
+
++           I will try larger parameters through server GPU.
+```
 
 ----
 
-#### `Conclusion`
+
+#### `Conclusion of Meeting on 8/29/2022`
 
 When I add a sensitivity map to the DeCoLearn, I had never expected unstable training performance because of the more plentiful data.
 
@@ -107,6 +119,7 @@ However, I can analyze that the additional sensitivity map suggested a more chal
 This research note will help future training issues.
 
 
+<!--
 
 ----
 
@@ -123,3 +136,4 @@ Meeting Purpose: Server PC Set-up
 
 
 ----
+-->
