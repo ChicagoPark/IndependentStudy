@@ -123,6 +123,7 @@ This research note will help future training issues.
 
 Possible Problem: Incorrect coding in mul_coil processing.
 
+Operate given code (DU) to check the performance.
 
 
 
