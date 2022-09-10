@@ -119,6 +119,14 @@ However, I can analyze that the additional sensitivity map suggested a more chal
 This research note will help future training issues.
 
 
+
+
+Possible Problem: Incorrect coding in mul_coil processing.
+
+
+
+
+
 <!--
 
 ----
