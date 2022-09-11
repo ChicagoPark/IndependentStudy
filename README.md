@@ -120,6 +120,12 @@ This research note will help future training issues.
 
 
 
+Process
+(1) Train on single sensitivity map
+=> DU works poorly
+
+(2) Use Gan-provided to check the EDSR is working well or not in DU process.
+
 
 Possible Problem: Incorrect coding in mul_coil processing.
 
