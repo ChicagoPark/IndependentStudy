@@ -134,6 +134,42 @@ Operate given code (DU) to check the performance.
 
 
 
+## `2. [Meeting on 09/09/2022]`
+
+> Meeting Purpose: To solve unstable and unusual training and validation performance.
+
+
+
+----
+
+### `2.1. [List of Feedback] (9/09/2022)`
+
+----
+```diff
++ Suggestion 1: Try to change lambda (Bigger: Stable / Smaller: Targeting high performance)
+
++ Suggestion 2: Plot the registration map
+
++ Suggestion 3: Consider just one Sensitivity Map then check out.
+```
+
+### `2.2. [List of Trials]`
+
+```diff
++ Trial 1: Check Single Channel Only with Ordinary DeCoLearn
+
+ => Result: Work as usual
+
++ Trial 2: Check Single Channel Only with Deep Unfolding with EDSR reconstruction module
+
+=> Result: Work poorer than Ordinary DeCoLearn
+
++ Trial 3: 
+```
+
+
+
+
 <!--
 
 ----
