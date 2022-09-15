@@ -158,15 +158,27 @@ Operate given code (DU) to check the performance.
 ```diff
 + Trial 1: Check Single Channel Only with Ordinary DeCoLearn
 
- => Result: Work as usual
+ => Result: Work as described performance at GitHub.
 
 + Trial 2: Check Single Channel Only with Deep Unfolding with EDSR reconstruction module
 
-=> Result: Work poorer than Ordinary DeCoLearn
+=> Result: The performance is evern worse than EDSR-based Ordinary DeCoLearn
 
-+ Trial 3: 
+=> Diagnosis 1: The problem can be on the DU reconstruction module by itself.
+
+=> Diagnosis 2: Replace the CNNBlock to EDSR from Weijie Code (including CNN, DU, and DEQ) to check the EDSR's performance.
+
+
 ```
 
+Fundamental Problem 1: Loss function
+
+Fundamental Problem 2: Large learning rate of reconstruction module
+
+Fundamental Problem 3: I thought the main cause was registration module, however the stranger tendency is from exploding loss of reconstruction module.
+
+
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/190292204-5c314b61-9321-40b1-b204-ef29cd8553db.PNG">
 
 
 
