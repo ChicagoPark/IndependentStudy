@@ -1,5 +1,6 @@
 # IndependentStudy (CSE 400E)
 
+
 ```
 Independent Study Advisor: Professor Ulugbek Kamilov
 
@@ -180,6 +181,9 @@ Fundamental Problem 3: I thought the main cause was registration module, however
 
 <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/190292204-5c314b61-9321-40b1-b204-ef29cd8553db.PNG">
 
+
+Install ants in Windows: 
+pip install https://github.com/SGotla/ANTsPy/releases/download/0.1.7Win64/antspy-0.1.7-cp37-cp37m-win_amd64.whl
 
 
 <!--
