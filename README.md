@@ -147,11 +147,15 @@ Operate given code (DU) to check the performance.
 
 ----
 ```diff
-+ Suggestion 1: Try to change lambda (Bigger: Stable / Smaller: Targeting high performance)
++ Suggestion 1: Show the training result of non-unfolding Version
 
-+ Suggestion 2: Plot the registration map
++ Suggestion 2: Make the parameter at PnP trainable and log them to avoid crazy training result.
 
-+ Suggestion 3: Consider just one Sensitivity Map then check out.
+ Mostly, we fix alpha parameter with our preferred value, and set the gamma value as trainable variable.q
+
++ Suggestion 3: Try RED version (Trainable parameters vs Non-trainable parameters.)
+
+ set the mue value as a trainable parameters.
 ```
 
 ### `2.2. [List of Trials]`
@@ -184,6 +188,13 @@ Fundamental Problem 3: I thought the main cause was registration module, however
 
 Install ants in Windows: 
 pip install https://github.com/SGotla/ANTsPy/releases/download/0.1.7Win64/antspy-0.1.7-cp37-cp37m-win_amd64.whl
+
+
+## `3. [Meeting on 09/16/2022]`
+
+> Meeting Purpose: To fix unwanted visualized data
+
+
 
 
 <!--
