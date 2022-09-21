@@ -140,10 +140,63 @@ Operate given code (DU) to check the performance.
 > Meeting Purpose: To solve unstable and unusual training and validation performance.
 
 
-
 ----
 
 ### `2.1. [List of Feedback] (9/09/2022)`
+
+----
+```diff
++ Suggestion 1: Try to change lambda variable in the registration module (Bigger will have stable / Smaller will have unstable but targeting better performance.)
+
++ Suggestion 2: Plot the registration map.
+
++ Suggestion 3: Train with the single sensitivity map to figure out the primary cause for the problem.
+```
+
+### `2.2. [List of Trials]`
+
+> Among the three suggestions, I focus more on suggestion 3. Because even though deep unfolding is already proved that it has way better performance, it has slightly better or worse performance than normal EDSR.
+
+### `2.2.1 [Solve poor training result]`
+
+>As we can see the figure below, the strange training result is coming from reconstruction module.
+
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/190292204-5c314b61-9321-40b1-b204-ef29cd8553db.PNG">
+
+----
+```diff
++ Recognized problem: After I have done many experiments, I can figure out the problem for poor training performance is on reconstruction module.
+
++ My solution 1: I change the loss function from `nn.SmoothL1Loss` to `nn.MSELoss`, all the poor training result is solved.
+
++ My solution 2: I use small reconstruction learning rate, and the stability is getting absolutely better.
+```
+
+### `2.2.1 [Check Single Channel Only with Ordinary DeCoLearn]`
+
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/191614871-516b923e-1485-4e16-855c-6ba0422dcee3.PNG">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/191614877-01c8f762-a0be-425f-a9bf-1a2d453df951.png">
+
+<!--
+Install ants in Windows: 
+pip install https://github.com/SGotla/ANTsPy/releases/download/0.1.7Win64/antspy-0.1.7-cp37-cp37m-win_amd64.whl
+-->
+
+
+----
+
+## `3. [Meeting on 09/16/2022]`
+
+> Meeting Purpose: To fix unwanted visualized data (artifacts) even though the performance is satisfying.
+
+`Unwanted Artifacts in the MRI`
+:---------------: 
+ <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/191612608-c4aff776-967b-440c-baeb-124f214ccc0f.png"> 
+ <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/191612667-43626f66-50e0-474f-a549-c257d4efe9af.PNG"> 
+
+
+### `3.1. [List of Feedback] (9/16/2022)`
 
 ----
 ```diff
@@ -158,43 +211,13 @@ Operate given code (DU) to check the performance.
  set the mue value as a trainable parameters.
 ```
 
-### `2.2. [List of Trials]`
+### `3.2. [List of Trials]`
 
-```diff
-+ Trial 1: Check Single Channel Only with Ordinary DeCoLearn
+### `3.2.1 [Check the artifact from DU reconstruction module without registration module]`
 
- => Result: Work as described performance at GitHub.
-
-+ Trial 2: Check Single Channel Only with Deep Unfolding with EDSR reconstruction module
-
-=> Result: The performance is evern worse than EDSR-based Ordinary DeCoLearn
-
-=> Diagnosis 1: The problem can be on the DU reconstruction module by itself.
-
-=> Diagnosis 2: Replace the CNNBlock to EDSR from Weijie Code (including CNN, DU, and DEQ) to check the EDSR's performance.
-
-
-```
-
-Fundamental Problem 1: Loss function
-
-Fundamental Problem 2: Large learning rate of reconstruction module
-
-Fundamental Problem 3: I thought the main cause was registration module, however the stranger tendency is from exploding loss of reconstruction module.
-
-
-<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/190292204-5c314b61-9321-40b1-b204-ef29cd8553db.PNG">
-
-
-Install ants in Windows: 
-pip install https://github.com/SGotla/ANTsPy/releases/download/0.1.7Win64/antspy-0.1.7-cp37-cp37m-win_amd64.whl
-
-
-## `3. [Meeting on 09/16/2022]`
-
-> Meeting Purpose: To fix unwanted visualized data
-
-
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/191617971-6affc5ce-788a-4042-a27c-31f52a9219fd.PNG">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/191617979-ae555085-bd44-492c-8d25-8358e218eebd.png">
 
 
 <!--
