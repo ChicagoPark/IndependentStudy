@@ -224,7 +224,7 @@ TensorBoard  	      |      MRI Image
 
 ### `3.2.2 [Make the parameter at PnP trainable and log them]`
 
-#### i) Set the only ALPHA as trainable parameters
+#### i) Set the only Alpha as trainable parameters
 
 
 * Inserted Code
@@ -245,20 +245,37 @@ TensorBoard  	      |      MRI Image
 <img width="450" alt="IMG" src="PATH">  | <img width="450" alt="IMG" src="PATH">
 
 
-### `3.2.2 [Try RED and also set the parameter as a traininable parameter]`
+
+
+### `3.2.3 [Try RED and also set the parameter as a traininable parameter]`
 
 * Code for RED operation
-```python
 
+```python
+elif self.training_type == "red": # training_type == "red"
+    dc = fmult(x, S, P, self.mul_coil)  # A x
+    dc = ftran(dc - y, S, P, self.mul_coil)  # A^H (Ax - y)
+
+    dc = dc.permute([0, 3, 1, 2]).contiguous()
+    x = x.permute([0, 3, 1, 2]).contiguous()
+
+    x = x - self.gamma *(dc + self.mu *(self.nn(x, P, S, y) - x))
+
+    return x
 ```
+
+----
 
 TensorBoard  	      |      MRI Image
 :---------------: | :-------------:
-<img width="450" alt="IMG" src="PATH">  | <img width="450" alt="IMG" src="PATH">
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192928016-a9bca5f6-e087-4a0e-a4ea-25d54e415949.jpeg">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192928007-cfd09a74-e8f2-425b-b6b4-50d9303319dc.png">
 
 > I set `mu` as a trainable parameter and then set the gamma as 0.1 based on the experiment.
+>
+> <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192928024-11e266bf-d153-470d-a523-a2473651cefd.png">
 
 
+----
 
 ### `3.2.4 [Visualize registration result]`
 
