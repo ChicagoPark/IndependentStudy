@@ -224,26 +224,16 @@ TensorBoard  	      |      MRI Image
 
 ### `3.2.2 [Make the parameter at PnP trainable and log them]`
 
-#### i) Set the only Alpha as trainable parameters
 
-
-* Inserted Code
-```python
-
-```
-
+#### i) Set the GAMMA and ALPHA both as trainable parameters
 
 TensorBoard  	      |      MRI Image
 :---------------: | :-------------:
-<img width="450" alt="IMG" src="PATH">  | <img width="450" alt="IMG" src="PATH">
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/193021475-1d0f20d1-f19c-4bb9-a0b1-4889b0beb060.png">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/193021505-c08b5fd3-7899-44bf-a08f-8f66b369d9de.png">
 
-
-#### ii) Set the GAMMA and ALPHA both as trainable parameters
-
-TensorBoard  	      |      MRI Image
-:---------------: | :-------------:
-<img width="450" alt="IMG" src="PATH">  | <img width="450" alt="IMG" src="PATH">
-
+> * Parameter Alpha and Gamma Tracking Result
+>
+> > <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/193021637-0d71e56d-fce0-44df-b372-ac27b0aaba55.png">
 
 
 
@@ -272,25 +262,21 @@ TensorBoard  	      |      MRI Image
 
 > I set `mu` as a trainable parameter and then set the gamma as 0.1 based on the experiment.
 >
-> <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192928024-11e266bf-d153-470d-a523-a2473651cefd.png">
+> > <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192928024-11e266bf-d153-470d-a523-a2473651cefd.png">
 
 
 ----
 
 ### `3.2.4 [Visualize registration result]`
 
-
 Beginning point of the training |      Ending point of the training
 :---------------: | :-------------:
-<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192940947-8c4efff3-5ed5-4c1a-97e1-1c9467351388.png">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192940929-a06905ff-7b02-48f0-85d9-c3ad22e21faf.png">
-
-
+<img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192940947-8c4efff3-5ed5-4c1a-97e1-1c9467351388.png">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/193022240-d5c6f554-edf4-479b-a930-1940cb965095.png">
 
 
 #### Training Progress Video
 
 <img width="900" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192941221-cd610073-a10c-4876-a346-aef2f9f85dd1.mp4">
-
 
 
 <!--
