@@ -279,13 +279,17 @@ TensorBoard  	      |      MRI Image
 
 ### `3.2.4 [Visualize registration result]`
 
-![](./file/cover_img.gif)
-<img width="950" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192921224-43348c58-bef1-4ef1-8d1a-1d94994289c2.gif">
 
 Beginning point of the training |      Ending point of the training
 :---------------: | :-------------:
 <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192940947-8c4efff3-5ed5-4c1a-97e1-1c9467351388.png">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192940929-a06905ff-7b02-48f0-85d9-c3ad22e21faf.png">
 
+
+
+
+#### Training Progress Video
+
+<img width="900" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192941221-cd610073-a10c-4876-a346-aef2f9f85dd1.mp4">
 
 
 
