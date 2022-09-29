@@ -204,11 +204,13 @@ pip install https://github.com/SGotla/ANTsPy/releases/download/0.1.7Win64/antspy
 
 + Suggestion 2: Make the parameter at PnP trainable and log them to avoid crazy training result.
 
- Mostly, we fix alpha parameter with our preferred value, and set the gamma value as trainable variable.q
+ Mostly, we fix alpha parameter with our preferred value, and set the gamma value as trainable variable.
 
 + Suggestion 3: Try RED version (Trainable parameters vs Non-trainable parameters.)
 
  set the mue value as a trainable parameters.
+ 
++ Suggestion 4: Visualize registration result.
 ```
 
 ### `3.2. [List of Trials]`
@@ -219,6 +221,52 @@ TensorBoard  	      |      MRI Image
 :---------------: | :-------------:
 <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/191617971-6affc5ce-788a-4042-a27c-31f52a9219fd.PNG">  | <img width="450" alt="IMG" src="https://user-images.githubusercontent.com/73331241/191617979-ae555085-bd44-492c-8d25-8358e218eebd.png">
 
+
+### `3.2.2 [Make the parameter at PnP trainable and log them]`
+
+#### i) Set the only ALPHA as trainable parameters
+
+
+* Inserted Code
+```python
+
+```
+
+
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="PATH">  | <img width="450" alt="IMG" src="PATH">
+
+
+#### ii) Set the GAMMA and ALPHA both as trainable parameters
+
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="PATH">  | <img width="450" alt="IMG" src="PATH">
+
+
+### `3.2.2 [Try RED and also set the parameter as a traininable parameter]`
+
+* Code for RED operation
+```python
+
+```
+
+TensorBoard  	      |      MRI Image
+:---------------: | :-------------:
+<img width="450" alt="IMG" src="PATH">  | <img width="450" alt="IMG" src="PATH">
+
+> I set `mu` as a trainable parameter and then set the gamma as 0.1 based on the experiment.
+
+
+
+### `3.2.4 [Visualize registration result]`
+
+![](./file/cover_img.gif)
+<img width="950" alt="IMG" src="https://user-images.githubusercontent.com/73331241/192921224-43348c58-bef1-4ef1-8d1a-1d94994289c2.gif">
+
+
+### `3.2.3 []`
 
 <!--
 
